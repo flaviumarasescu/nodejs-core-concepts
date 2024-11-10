@@ -1,5 +1,5 @@
 module.exports = class EventEmitter {
-    lsdm = {}
+    listeners = {}
 
     addListener(eventName, fn) {
         this.listeners[eventName] = this.listeners[eventName] || []
